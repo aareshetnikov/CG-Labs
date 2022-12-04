@@ -26,7 +26,6 @@ namespace Lab02
         int centY;
 
         static int leftBorder;
-        //Graphics graf;
 
         Point lastPoint = Point.Empty;
         bool isMouseDown = new Boolean();
@@ -102,7 +101,7 @@ namespace Lab02
                 Invalidate();
             }
             button6.Enabled = false;
-            label5.Text = "Нет катринки";
+            label5.Text = "Нет картинки";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -112,9 +111,7 @@ namespace Lab02
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            /*graf = pictureBox1.CreateGraphics();
-            bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
-            pictureBox1.Image = bmp;*/
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -205,16 +202,7 @@ namespace Lab02
 
                 ++x;
             }
-            //pictureBox1.Image = bmp;
-
-            //pictureBox1.Update();
-            /*x = leftBorder;
-            while (bmp.GetPixel(x, y) == pictureBox3.BackColor && y < pictureBox1.Height - 1)
-            {
-                if (bmp.GetPixel(x, y + 1) == backColor)
-                    fillColor(x, y + 1);
-                ++x;
-            }*/
+            
 
         }
 
@@ -243,33 +231,7 @@ namespace Lab02
                     fillPicture(x, y + 1);
 
                 ++x;
-            }
-            /*if (bmp.GetPixel(x, y) == Color.FromArgb(0, 0, 0, 0))
-            {
-                while (bmp.GetPixel(x, y) == Color.FromArgb(0, 0, 0, 0) && x > 0)
-                    x--;
-                Color bord = bmp.GetPixel(x, y);
-                leftBorder = ++x;
-                while (bmp.GetPixel(x, y) == Color.FromArgb(0, 0, 0, 0) && x < pictureBox1.Width - 1)
-                {
-                    bmp.SetPixel(x, y, picBmp.GetPixel(x, y));
-                    pictureBox1.Image = bmp;
-                    pictureBox1.Update();
-                    x++;
-                }
-                x = leftBorder;
-                while (bmp.GetPixel(x, y) != Color.FromArgb(255, 0, 0, 0) && y > 0)
-                {
-                    fillPicture(x, y - 1);
-                    x++;
-                }
-                x = leftBorder;
-                while (bmp.GetPixel(x, y) != Color.FromArgb(255, 0, 0, 0) && y < pictureBox1.Height - 1)
-                {
-                    fillPicture(x, y + 1);
-                    x++;
-                }
-            }*/
+            }          
         }
 
         private void button5_Click(object sender, EventArgs e)

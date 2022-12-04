@@ -47,7 +47,7 @@ namespace Lab02
             g = pictureBox1.CreateGraphics();
 
             BresenhamAlgorithm(x1, y1, x2, y2);
-            ByAlgorithm(x1, y1, x2, y2);
+            WuAlgorithm(x1, y1, x2, y2);
         }
 
         //целочисленный алгоритм Брезенхема
@@ -135,7 +135,7 @@ namespace Lab02
         }
 
         //алгоритм ВУ
-        private void ByAlgorithm(double x1, double y1, double x2, double y2)
+        private void WuAlgorithm(double x1, double y1, double x2, double y2)
         {
             x1 = x1 + 350;
             x2 = x2 + 350;
